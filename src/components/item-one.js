@@ -6,10 +6,14 @@ const Header = styled.div`
   color: red;
 `;
 
+const fontSize = css`
+  font-size: 50px;
+`;
+
 const ItemOne = ({ children }) => {
   return (
     <Header>
-      <h2>這是CSS IN JS的範例</h2>
+      <h2 css={fontSize}>這是CSS IN JS的範例</h2>
     </Header>
   );
 };
